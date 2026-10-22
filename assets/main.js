@@ -1,16 +1,6 @@
 /* ===== Home Мебель: общие скрипты ===== */
 
-/* ===== курсор ===== */
-(function(){
-  if(!window.matchMedia||!matchMedia('(pointer:fine)').matches) return;
-  document.body.classList.add('cur');
-  var d=document.createElement('div'); d.className='cur-dot'; document.body.appendChild(d);
-  document.addEventListener('mousemove',function(e){ d.style.left=e.clientX+'px'; d.style.top=e.clientY+'px'; });
-  document.addEventListener('mouseover',function(e){
-    var t=e.target.closest('a,button,summary,.chip');
-    d.classList.toggle('big',!!t);
-  });
-})();
+
 
 /* ===== бургер ===== */
 (function(){
